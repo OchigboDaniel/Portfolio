@@ -16,7 +16,7 @@ class MyImage extends StatelessWidget {
     Color containerSocials = theme.brightness == Brightness.light ? LightColors.scafoldColor : DarkColors.scafoldColor;
 
 
-    String myImageUrl =  'gs://portfolio-images-7eba9.appspot.com/image.png';
+    String myImageUrl =  'https://github.com/OchigboDaniel/Portfolio.git/';
     return Padding(
       padding: const EdgeInsets.only(left: 15, right: 15),
       child: FutureBuilder(

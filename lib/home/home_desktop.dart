@@ -41,7 +41,7 @@ class HomeDesktop extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("I'ms", style: theme.textTheme.subtitle2,),
+                          Text("I'm", style: theme.textTheme.subtitle2,),
                           Text("Daniel Ochigbo", style: theme.textTheme.headline2,),
                           Divider(
                             endIndent: 500,

@@ -26,6 +26,10 @@ class HomeMobile extends StatelessWidget {
             child: Column(
               children: [
 
+                Container(
+                  child: Image(image: NetworkImage('https://github.com/OchigboDaniel/Portfolio.git/')),
+                ),
+
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -36,7 +40,7 @@ class HomeMobile extends StatelessWidget {
                     ),
                     Text(AppText.textIntro,
                       overflow: TextOverflow.ellipsis, maxLines: 15,
-                      style: theme.textTheme.bodyText1,),
+                      ),
                     VerticalSpace(10),
 
                     ToolImage(),
