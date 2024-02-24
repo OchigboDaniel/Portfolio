@@ -6,7 +6,7 @@ class ToolImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    String flutterImageUrl = 'gs://portfolio-images-7eba9.appspot.com/dart.png';
+    String flutterImageUrl = 'gs://portfolio-images-7eba9.appspot.com/flutter.png';
     String dartImageUrl = 'gs://portfolio-images-7eba9.appspot.com/dart.png';
     String androidImageUrl = 'gs://portfolio-images-7eba9.appspot.com/andrioid.png';
     
