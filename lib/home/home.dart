@@ -21,8 +21,8 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     final ThemeData theme = Theme.of(context);
 
-    String lightThemeImageUrl = 'gs://portfolio-images-7eba9.appspot.com/lighttheme.png';
-    String darkThemeImageUrl = 'gs://portfolio-images-7eba9.appspot.com/dark_theme.png';
+    final String lightThemeImageUrl = 'https://firebasestorage.googleapis.com/v0/b/portfolio-images-7eba9.appspot.com/o/lighttheme.png?alt=media&token=88db9b1b-6bc3-4493-8d07-10878448ed81';
+    final String darkThemeImageUrl = 'https://firebasestorage.googleapis.com/v0/b/portfolio-images-7eba9.appspot.com/o/dark_theme.png?alt=media&token=dbd28ee8-b118-4c89-a6ec-bac620af5767';
 
     //var text = Lorem.paragraph(numSentences: 3, numParagraphs: 1);
     return Scaffold(
@@ -33,15 +33,7 @@ class Home extends StatelessWidget {
             padding: const EdgeInsets.only(right: 30),
             child: InkWell(
               onTap: (){Provider.of<ThemeManager>(context, listen: false).toggleTheme();},
-              child: FutureBuilder(
-                future: precacheImage(NetworkImage(lightThemeImageUrl), context),
-                  builder: (BuildContext context, AsyncSnapshot<dynamic> snapshot){
-                  if (snapshot.connectionState == ConnectionState.waiting ){
-                    return CircularProgressIndicator();
-                  }else if (snapshot.hasError){
-                    return Text('Error loading Image');
-                  }else{
-                    return Container(
+              child: Container(
                       height: 40,
                       width: 40,
                       decoration: BoxDecoration(
@@ -66,12 +58,9 @@ class Home extends StatelessWidget {
                           color: Provider.of<ThemeManager>(context).themeData == AppTheme.lightTheme ? LightColors.appBarColor : DarkColors.appBarColor,
                           shape: BoxShape.circle
                       ),
-                    );
-                  }
-                  })
-            ),
+                    )
           ),
-      ]),
+      )]),
 
       body: ScreenTypeLayout(
         mobile: HomeMobile(theme: theme),

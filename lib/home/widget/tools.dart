@@ -6,9 +6,9 @@ class ToolImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    String flutterImageUrl = 'gs://portfolio-images-7eba9.appspot.com/flutter.png';
-    String dartImageUrl = 'gs://portfolio-images-7eba9.appspot.com/dart.png';
-    String androidImageUrl = 'gs://portfolio-images-7eba9.appspot.com/andrioid.png';
+    String flutterImageUrl = 'https://firebasestorage.googleapis.com/v0/b/portfolio-images-7eba9.appspot.com/o/flutter.png?alt=media&token=80d9f19a-277b-491c-bb54-51598e770152';
+    String dartImageUrl = 'https://firebasestorage.googleapis.com/v0/b/portfolio-images-7eba9.appspot.com/o/dart.png?alt=media&token=798546fd-7e39-4e4c-8321-18d9388f478c';
+    String androidImageUrl = 'https://firebasestorage.googleapis.com/v0/b/portfolio-images-7eba9.appspot.com/o/andrioid.png?alt=media&token=2f305d68-3333-4cd4-a0e7-8d93400e523f';
     
     Widget ToolFutures(String imageUrl){
       return FutureBuilder(

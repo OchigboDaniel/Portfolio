@@ -16,7 +16,7 @@ class MyImage extends StatelessWidget {
     Color containerSocials = theme.brightness == Brightness.light ? LightColors.scafoldColor : DarkColors.scafoldColor;
 
 
-    String myImageUrl =  'https://github.com/OchigboDaniel/Portfolio.git/';
+    String myImageUrl =  'https://firebasestorage.googleapis.com/v0/b/portfolio-images-7eba9.appspot.com/o/image.png?alt=media&token=35971d17-0205-4842-8c81-ff37b1c23367';
     return Padding(
       padding: const EdgeInsets.only(left: 15, right: 15),
       child: FutureBuilder(
@@ -35,7 +35,7 @@ class MyImage extends StatelessWidget {
             shape: BoxShape.circle,
             image: DecorationImage(
                 fit: BoxFit.fitHeight,
-                image: NetworkImage(myImageUrl))
+                image: NetworkImage('https://firebasestorage.googleapis.com/v0/b/portfolio-images-7eba9.appspot.com/o/image.png?alt=media&token=35971d17-0205-4842-8c81-ff37b1c23367'))
           ),
           );}}
       ),

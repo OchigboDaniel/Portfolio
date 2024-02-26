@@ -25,11 +25,6 @@ class HomeMobile extends StatelessWidget {
             width: double.infinity,
             child: Column(
               children: [
-
-                Container(
-                  child: Image(image: NetworkImage('https://github.com/OchigboDaniel/Portfolio.git/')),
-                ),
-
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
